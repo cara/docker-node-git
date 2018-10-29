@@ -11,6 +11,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
 apt-get install -y git
 RUN npm install -g node-gyp
+RUN npm install -g nodemon
 
 # Install Supervisor
 RUN apt-get install -y supervisor
